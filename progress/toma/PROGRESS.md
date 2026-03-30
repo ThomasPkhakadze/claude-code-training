@@ -5,17 +5,17 @@
 ---
 
 ## Day 1: Claude Code Power Features
-- [ ] Explored repo using Claude Code tools (Read, Glob, Grep)
-- [ ] Studied CLAUDE.md configuration
-- [ ] Mastered slash commands and shortcuts
-- [ ] Created one-shot dashboard from single prompt
-- [ ] Created exercises/01_hello_world/exploration_notes.md
-- [ ] Created exercises/02_html_page/one_shot_dashboard.html
-- [ ] Committed to git
-- **Started:**
-- **Completed:**
-- **Time for one-shot dashboard:**
-- **Notes:**
+- [x] Explored repo using Claude Code tools (Read, Glob, Grep)
+- [x] Studied CLAUDE.md configuration
+- [x] Mastered slash commands and shortcuts
+- [x] Created one-shot dashboard from single prompt
+- [x] Created exercises/01_hello_world/exploration_notes.md
+- [x] Created exercises/02_html_page/one_shot_dashboard.html
+- [x] Committed to git
+- **Started:** 2026-03-30
+- **Completed:** 2026-03-30
+- **Time for one-shot dashboard:** ~30 seconds (single Write tool call)
+- **Notes:** Prompt specificity is key -- detailed prompt = one tool call. Vague prompt = many iterations.
 
 ## Day 2: Production Dashboard Sprint
 - [ ] Studied agency dashboard pattern
@@ -62,7 +62,7 @@
 
 | Day | Status | Date Completed |
 |-----|--------|---------------|
-| 1 | | |
+| 1 | Complete | 2026-03-30 |
 | 2 | | |
 | 3 | | |
 | 4 | | |
