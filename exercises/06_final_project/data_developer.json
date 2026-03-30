@@ -1,0 +1,297 @@
+{
+  "client": "TechFlow",
+  "period": "February 2026",
+  "meta": {
+    "reach": 284000,
+    "impressions": 612000,
+    "engagements": 18400,
+    "spend": 3200,
+    "ads": [
+      {
+        "name": "Brand Awareness - Tech Leaders",
+        "type": "awareness",
+        "reach": 68000,
+        "impressions": 142000,
+        "clicks": 3100,
+        "ctr": "2.2%",
+        "spend": 520
+      },
+      {
+        "name": "Product Demo Video - Facebook",
+        "type": "awareness",
+        "reach": 52000,
+        "impressions": 118000,
+        "clicks": 2800,
+        "ctr": "2.4%",
+        "spend": 480
+      },
+      {
+        "name": "Free Trial Offer - Cold Audience",
+        "type": "conversion",
+        "reach": 41000,
+        "impressions": 89000,
+        "clicks": 3600,
+        "ctr": "4.0%",
+        "spend": 560
+      },
+      {
+        "name": "Free Trial Offer - Lookalike",
+        "type": "conversion",
+        "reach": 35000,
+        "impressions": 76000,
+        "clicks": 3200,
+        "ctr": "4.2%",
+        "spend": 440
+      },
+      {
+        "name": "Retargeting - Website Visitors",
+        "type": "retargeting",
+        "reach": 28000,
+        "impressions": 62000,
+        "clicks": 4100,
+        "ctr": "6.6%",
+        "spend": 380
+      },
+      {
+        "name": "Retargeting - Trial Abandoners",
+        "type": "retargeting",
+        "reach": 22000,
+        "impressions": 51000,
+        "clicks": 3400,
+        "ctr": "6.7%",
+        "spend": 320
+      },
+      {
+        "name": "Case Study Carousel - Instagram",
+        "type": "awareness",
+        "reach": 24000,
+        "impressions": 48000,
+        "clicks": 1900,
+        "ctr": "4.0%",
+        "spend": 280
+      },
+      {
+        "name": "Webinar Promo - LinkedIn Redirect",
+        "type": "conversion",
+        "reach": 14000,
+        "impressions": 26000,
+        "clicks": 1200,
+        "ctr": "4.6%",
+        "spend": 220
+      }
+    ]
+  },
+  "google": {
+    "impressions": 189000,
+    "clicks": 14200,
+    "ctr": "7.5%",
+    "spend": 2100,
+    "campaigns": [
+      {
+        "name": "Search - Project Management Software",
+        "type": "search",
+        "impressions": 62000,
+        "clicks": 6200,
+        "ctr": "10.0%",
+        "spend": 680
+      },
+      {
+        "name": "Search - Workflow Automation Tool",
+        "type": "search",
+        "impressions": 41000,
+        "clicks": 3900,
+        "ctr": "9.5%",
+        "spend": 520
+      },
+      {
+        "name": "Search - Brand Terms",
+        "type": "search",
+        "impressions": 28000,
+        "clicks": 2400,
+        "ctr": "8.6%",
+        "spend": 180
+      },
+      {
+        "name": "Display - Retargeting Network",
+        "type": "display",
+        "impressions": 44000,
+        "clicks": 1320,
+        "ctr": "3.0%",
+        "spend": 420
+      },
+      {
+        "name": "YouTube Pre-Roll - Product Explainer",
+        "type": "video",
+        "impressions": 14000,
+        "clicks": 380,
+        "ctr": "2.7%",
+        "spend": 300
+      }
+    ]
+  },
+  "website": {
+    "sessions": 45000,
+    "sessions_previous_month": 41200,
+    "sessions_change": "+9.2%",
+    "bounce_rate": 38.4,
+    "bounce_rate_previous_month": 44.1,
+    "bounce_rate_change": "-5.7pp",
+    "conversion_rate": 7.1,
+    "conversion_rate_previous_month": 6.4,
+    "conversion_rate_change": "+0.7pp",
+    "avg_session_duration": "3m 42s",
+    "pages_per_session": 4.2,
+    "traffic_sources": {
+      "organic": { "sessions": 15300, "percentage": 34.0 },
+      "paid": { "sessions": 12600, "percentage": 28.0 },
+      "direct": { "sessions": 8100, "percentage": 18.0 },
+      "referral": { "sessions": 5400, "percentage": 12.0 },
+      "social": { "sessions": 3600, "percentage": 8.0 }
+    }
+  },
+  "funnel": {
+    "website_visits": 45000,
+    "free_trial_signups": 3200,
+    "active_trials": 1800,
+    "paid_conversions": 420,
+    "rates": {
+      "visit_to_signup": "7.1%",
+      "signup_to_active": "56.3%",
+      "active_to_paid": "23.3%",
+      "overall_visit_to_paid": "0.93%"
+    }
+  },
+  "monthly_trends": [
+    {
+      "month": "Mar 2025",
+      "sessions": 28000,
+      "signups": 1400,
+      "paid": 180,
+      "revenue": 16200,
+      "ad_spend": 3100
+    },
+    {
+      "month": "Apr 2025",
+      "sessions": 29500,
+      "signups": 1550,
+      "paid": 195,
+      "revenue": 17550,
+      "ad_spend": 3200
+    },
+    {
+      "month": "May 2025",
+      "sessions": 31000,
+      "signups": 1700,
+      "paid": 215,
+      "revenue": 19350,
+      "ad_spend": 3400
+    },
+    {
+      "month": "Jun 2025",
+      "sessions": 30200,
+      "signups": 1650,
+      "paid": 205,
+      "revenue": 18450,
+      "ad_spend": 3300
+    },
+    {
+      "month": "Jul 2025",
+      "sessions": 27500,
+      "signups": 1500,
+      "paid": 190,
+      "revenue": 17100,
+      "ad_spend": 2900
+    },
+    {
+      "month": "Aug 2025",
+      "sessions": 29000,
+      "signups": 1600,
+      "paid": 200,
+      "revenue": 18000,
+      "ad_spend": 3000
+    },
+    {
+      "month": "Sep 2025",
+      "sessions": 33000,
+      "signups": 1900,
+      "paid": 250,
+      "revenue": 22500,
+      "ad_spend": 3600
+    },
+    {
+      "month": "Oct 2025",
+      "sessions": 36000,
+      "signups": 2200,
+      "paid": 290,
+      "revenue": 26100,
+      "ad_spend": 4000
+    },
+    {
+      "month": "Nov 2025",
+      "sessions": 38500,
+      "signups": 2500,
+      "paid": 320,
+      "revenue": 28800,
+      "ad_spend": 4200
+    },
+    {
+      "month": "Dec 2025",
+      "sessions": 35000,
+      "signups": 2300,
+      "paid": 300,
+      "revenue": 27000,
+      "ad_spend": 3800
+    },
+    {
+      "month": "Jan 2026",
+      "sessions": 41200,
+      "signups": 2900,
+      "paid": 380,
+      "revenue": 34200,
+      "ad_spend": 4800
+    },
+    {
+      "month": "Feb 2026",
+      "sessions": 45000,
+      "signups": 3200,
+      "paid": 420,
+      "revenue": 37800,
+      "ad_spend": 5300
+    }
+  ],
+  "yoy_comparison": {
+    "period": "February",
+    "current_year": {
+      "year": 2026,
+      "sessions": 45000,
+      "signups": 3200,
+      "paid_conversions": 420,
+      "revenue": 37800,
+      "ad_spend": 5300,
+      "conversion_rate": 7.1,
+      "bounce_rate": 38.4,
+      "cpa": 12.62
+    },
+    "previous_year": {
+      "year": 2025,
+      "sessions": 26500,
+      "signups": 1350,
+      "paid_conversions": 165,
+      "revenue": 14850,
+      "ad_spend": 2800,
+      "conversion_rate": 5.1,
+      "bounce_rate": 48.2,
+      "cpa": 16.97
+    },
+    "changes": {
+      "sessions": "+69.8%",
+      "signups": "+137.0%",
+      "paid_conversions": "+154.5%",
+      "revenue": "+154.5%",
+      "ad_spend": "+89.3%",
+      "conversion_rate": "+2.0pp",
+      "bounce_rate": "-9.8pp",
+      "cpa": "-25.6%"
+    }
+  }
+}

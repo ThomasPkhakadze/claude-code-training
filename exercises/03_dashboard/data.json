@@ -1,0 +1,89 @@
+{
+  "client": "Cafe Batumi",
+  "period": "March 2026",
+  "meta": {
+    "reach": 45200,
+    "impressions": 89300,
+    "engagements": 3400,
+    "spend": 250,
+    "ads": [
+      {
+        "name": "Spring Menu Launch",
+        "reach": 15200,
+        "impressions": 28400,
+        "clicks": 890,
+        "ctr": "3.1%",
+        "spend": 65
+      },
+      {
+        "name": "Weekend Brunch Special",
+        "reach": 12100,
+        "impressions": 22800,
+        "clicks": 720,
+        "ctr": "3.2%",
+        "spend": 55
+      },
+      {
+        "name": "New Location Announcement",
+        "reach": 9800,
+        "impressions": 19500,
+        "clicks": 1100,
+        "ctr": "5.6%",
+        "spend": 50
+      },
+      {
+        "name": "Coffee Loyalty Program",
+        "reach": 5300,
+        "impressions": 11200,
+        "clicks": 480,
+        "ctr": "4.3%",
+        "spend": 45
+      },
+      {
+        "name": "Instagram Story - Barista Tips",
+        "reach": 2800,
+        "impressions": 7400,
+        "clicks": 210,
+        "ctr": "2.8%",
+        "spend": 35
+      }
+    ]
+  },
+  "google": {
+    "impressions": 32100,
+    "clicks": 2800,
+    "ctr": "8.7%",
+    "spend": 120,
+    "campaigns": [
+      {
+        "name": "Search - Coffee Near Me",
+        "impressions": 18500,
+        "clicks": 1850,
+        "ctr": "10.0%",
+        "spend": 65
+      },
+      {
+        "name": "Display - New Location",
+        "impressions": 9200,
+        "clicks": 640,
+        "ctr": "7.0%",
+        "spend": 35
+      },
+      {
+        "name": "Search - Best Brunch",
+        "impressions": 4400,
+        "clicks": 310,
+        "ctr": "7.0%",
+        "spend": 20
+      }
+    ]
+  },
+  "monthly_trend": [
+    { "month": "Oct 2025", "reach": 28000, "engagements": 1800, "spend": 180 },
+    { "month": "Nov 2025", "reach": 31000, "engagements": 2100, "spend": 200 },
+    { "month": "Dec 2025", "reach": 35000, "engagements": 2600, "spend": 220 },
+    { "month": "Jan 2026", "reach": 38000, "engagements": 2900, "spend": 230 },
+    { "month": "Feb 2026", "reach": 41000, "engagements": 3100, "spend": 240 },
+    { "month": "Mar 2026", "reach": 45200, "engagements": 3400, "spend": 250 }
+  ]
+}
