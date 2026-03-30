@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Analytics Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --bg-dark: #191919;
+            --bg-card: #262626;
+            --bg-card-alt: #1e1e1e;
+            --primary: #ffc711;
+            --secondary: #3cc5ee;
+            --text: #ffffff;
+            --text-muted: #888888;
+            --border: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 32px 40px 24px;
+        }
+
+        header h1 {
+            font-size: clamp(1.4rem, 2.5vw, 2rem);
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: clamp(0.8rem, 1.2vw, 0.95rem);
+            font-weight: 400;
+        }
+
+        main {
+            flex: 1;
+            padding: 0 40px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        /* Stat Cards */
+        .stat-cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 24px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .stat-card:nth-child(2) {
+            border-left-color: var(--secondary);
+        }
+
+        .stat-card:nth-child(3) {
+            border-left-color: var(--primary);
+        }
+
+        .stat-card:nth-child(4) {
+            border-left-color: var(--secondary);
+        }
+
+        .stat-card .label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .stat-card .value {
+            font-size: clamp(1.4rem, 2vw, 1.8rem);
+            font-weight: 700;
+        }
+
+        /* Data Table */
+        .table-section {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 28px;
+        }
+
+        .table-section h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead th {
+            text-align: left;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        tbody td {
+            padding: 14px 16px;
+            font-size: 0.9rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        tbody tr:hover {
+            background: var(--bg-card-alt);
+        }
+
+        .ctr-badge {
+            display: inline-block;
+            background: rgba(60, 197, 238, 0.15);
+            color: var(--secondary);
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Charts */
+        .charts-row {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: 20px;
+        }
+
+        .chart-card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 28px;
+        }
+
+        .chart-card h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .chart-wrapper {
+            position: relative;
+            width: 100%;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 32px 40px;
+            border-top: 1px solid var(--border);
+        }
+
+        footer span {
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .brand-yellow { color: var(--primary); }
+        .brand-cyan { color: var(--secondary); }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .stat-cards { grid-template-columns: repeat(2, 1fr); }
+            .charts-row { grid-template-columns: 1fr; }
+            main { padding: 0 20px 20px; }
+            header { padding: 24px 20px 16px; }
+            footer { padding: 24px 20px; }
+        }
+
+        @media (max-width: 500px) {
+            .stat-cards { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Social Media Analytics</h1>
+        <p>Campaign Performance Overview -- March 2026</p>
+    </header>
+
+    <main>
+        <!-- Stat Cards -->
+        <section class="stat-cards">
+            <div class="stat-card">
+                <div class="label">Reach</div>
+                <div class="value">45,200</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Impressions</div>
+                <div class="value">89,100</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Engagements</div>
+                <div class="value">3,421</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Ad Spend</div>
+                <div class="value">$250</div>
+            </div>
+        </section>
+
+        <!-- Data Table -->
+        <section class="table-section">
+            <h2>Campaign Performance</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Campaign Name</th>
+                        <th>Impressions</th>
+                        <th>Clicks</th>
+                        <th>CTR</th>
+                        <th>Spend</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Spring Product Launch</td>
+                        <td>28,400</td>
+                        <td>1,136</td>
+                        <td><span class="ctr-badge">4.0%</span></td>
+                        <td>$85</td>
+                    </tr>
+                    <tr>
+                        <td>Brand Awareness</td>
+                        <td>22,300</td>
+                        <td>669</td>
+                        <td><span class="ctr-badge">3.0%</span></td>
+                        <td>$60</td>
+                    </tr>
+                    <tr>
+                        <td>Retargeting Ads</td>
+                        <td>18,100</td>
+                        <td>905</td>
+                        <td><span class="ctr-badge">5.0%</span></td>
+                        <td>$45</td>
+                    </tr>
+                    <tr>
+                        <td>Story Promotions</td>
+                        <td>12,600</td>
+                        <td>378</td>
+                        <td><span class="ctr-badge">3.0%</span></td>
+                        <td>$35</td>
+                    </tr>
+                    <tr>
+                        <td>Influencer Collab</td>
+                        <td>7,700</td>
+                        <td>385</td>
+                        <td><span class="ctr-badge">5.0%</span></td>
+                        <td>$25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Charts -->
+        <section class="charts-row">
+            <div class="chart-card">
+                <h2>Impressions by Campaign</h2>
+                <div class="chart-wrapper">
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-card">
+                <h2>Spend Distribution</h2>
+                <div class="chart-wrapper">
+                    <canvas id="doughnutChart"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span class="brand-yellow">MARTIVI</span> <span class="brand-cyan">DIGITAL</span>
+    </footer>
+
+    <script>
+        const campaignNames = [
+            'Spring Product Launch',
+            'Brand Awareness',
+            'Retargeting Ads',
+            'Story Promotions',
+            'Influencer Collab'
+        ];
+
+        const impressions = [28400, 22300, 18100, 12600, 7700];
+        const spend = [85, 60, 45, 35, 25];
+
+        // Bar Chart -- Impressions by Campaign
+        new Chart(document.getElementById('barChart'), {
+            type: 'bar',
+            data: {
+                labels: campaignNames,
+                datasets: [{
+                    label: 'Impressions',
+                    data: impressions,
+                    backgroundColor: [
+                        '#ffc711',
+                        '#3cc5ee',
+                        '#ffc711',
+                        '#3cc5ee',
+                        '#ffc711'
+                    ],
+                    borderRadius: 6,
+                    borderSkipped: false
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: '#262626',
+                        titleColor: '#ffffff',
+                        bodyColor: '#ffffff',
+                        borderColor: '#333333',
+                        borderWidth: 1,
+                        padding: 12,
+                        callbacks: {
+                            label: function(ctx) {
+                                return ctx.parsed.y.toLocaleString() + ' impressions';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        ticks: { color: '#888888', font: { family: 'Montserrat', size: 11 } },
+                        grid: { display: false }
+                    },
+                    y: {
+                        ticks: {
+                            color: '#888888',
+                            font: { family: 'Montserrat', size: 11 },
+                            callback: function(val) { return (val / 1000) + 'k'; }
+                        },
+                        grid: { color: 'rgba(255,255,255,0.05)' }
+                    }
+                }
+            }
+        });
+
+        // Doughnut Chart -- Spend Distribution
+        new Chart(document.getElementById('doughnutChart'), {
+            type: 'doughnut',
+            data: {
+                labels: campaignNames,
+                datasets: [{
+                    data: spend,
+                    backgroundColor: [
+                        '#ffc711',
+                        '#3cc5ee',
+                        '#ff8c42',
+                        '#a855f7',
+                        '#34d399'
+                    ],
+                    borderColor: '#191919',
+                    borderWidth: 3
+                }]
+            },
+            options: {
+                responsive: true,
+                cutout: '60%',
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            color: '#ffffff',
+                            font: { family: 'Montserrat', size: 11 },
+                            padding: 16,
+                            usePointStyle: true,
+                            pointStyleWidth: 10
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: '#262626',
+                        titleColor: '#ffffff',
+                        bodyColor: '#ffffff',
+                        borderColor: '#333333',
+                        borderWidth: 1,
+                        padding: 12,
+                        callbacks: {
+                            label: function(ctx) {
+                                return ctx.label + ': $' + ctx.parsed;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
