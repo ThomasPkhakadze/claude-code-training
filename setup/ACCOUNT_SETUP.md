@@ -10,11 +10,7 @@ Claude Code requires an **Anthropic account with a paid plan** (Max or Team). Yo
 
 **Shared account email:** `content.martividigital@gmail.com`
 
-Giorgi will either:
-- Give you the login credentials directly, or
-- Add you to the team plan under your own email
-
-Either way, you will receive instructions before you start.
+You will log in using this shared account. Giorgi will give you the password.
 
 > **Important:** Do not share these credentials with anyone outside the team. This is a paid subscription and access is limited to our group.
 
@@ -50,11 +46,23 @@ Waiting for authentication...
 
 **What you will see in the browser:**
 
-A login page for Anthropic. Enter the credentials Giorgi provided:
+A login page for Anthropic (claude.ai). Enter:
 - Email: `content.martividigital@gmail.com`
-- Password: (provided separately)
+- Password: (Giorgi will provide this separately)
 
-After you log in, the browser will show a success message. You can close that tab and go back to your terminal.
+**IMPORTANT -- Verification Code Step:**
+
+After entering the email and password, Anthropic will send a **verification code** to `content.martividigital@gmail.com`. You don't have access to that inbox.
+
+**What to do:**
+1. When you see the "Enter verification code" screen, **message Giorgi immediately** (Telegram: @giorginozadze)
+2. Tell him: "I need the login code"
+3. Giorgi will check the email and send you the 6-digit code
+4. Enter the code in the browser and you're in
+
+> This only happens the first time you log in (or if your session expires). After that, Claude Code remembers your session.
+
+After you enter the code, the browser will show a success message. You can close that tab and go back to your terminal.
 
 **What you will see in the terminal after success:**
 
@@ -123,6 +131,10 @@ Copy that entire URL, open your browser manually, and paste it into the address 
 - Double-check that you are using the exact email and password Giorgi provided
 - Make sure there are no extra spaces before or after the email/password
 - If you are still stuck, message Giorgi -- the password may have been updated
+
+### "I need a verification code but can't reach Giorgi"
+
+Wait until you can reach him. The code is sent to his email and expires after a few minutes, so you need to coordinate in real time. Best to message him on Telegram right when you're at the login screen.
 
 ### "Session expired"
 
