@@ -18,16 +18,16 @@
 - **Notes:** Prompt specificity is key -- detailed prompt = one tool call. Vague prompt = many iterations.
 
 ## Day 2: Production Dashboard Sprint
-- [ ] Studied agency dashboard pattern
-- [ ] Built 6-slide social media report
-- [ ] Used CSS variables for all colors
-- [ ] Added print-friendly @media print rules
-- [ ] Created exercises/03_dashboard/client_report.html
-- [ ] Committed to git
-- **Started:**
-- **Completed:**
-- **Total build time:**
-- **Notes:**
+- [x] Studied agency dashboard pattern
+- [x] Built 6-slide social media report
+- [x] Used CSS variables for all colors
+- [x] Added print-friendly @media print rules
+- [x] Created exercises/03_dashboard/client_report.html
+- [x] Committed to git
+- **Started:** 2026-03-31
+- **Completed:** 2026-04-01
+- **Total build time:** Built slide-by-slide, iterative approach
+- **Notes:** Used CSS variables for all colors including Chart.js configs via getComputedStyle. Data sourced from data.json. Recommendations from curriculum spec.
 
 ## Day 3: Debug, Optimize, Ship
 - [ ] Found and fixed all 6 bugs in broken_dashboard.html
@@ -63,7 +63,7 @@
 | Day | Status | Date Completed |
 |-----|--------|---------------|
 | 1 | Complete | 2026-03-30 |
-| 2 | | |
+| 2 | Complete | 2026-04-01 |
 | 3 | | |
 | 4 | | |
 | **Final Test** | | |
