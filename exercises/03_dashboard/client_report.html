@@ -22,6 +22,10 @@
             --danger: #f87171;
             --grid-line: #2a2a2a;
             --title-gradient-mid: #1a1a2e;
+            --accent-client: #6F4E37;
+            --coral: #ff6b6b;
+            --green: #51cf66;
+            --purple: #845ef7;
         }
 
         /* ── Reset & Base ── */
@@ -50,6 +54,36 @@
             align-items: center;
             text-align: center;
             background: linear-gradient(135deg, var(--bg-dark) 0%, var(--title-gradient-mid) 50%, var(--bg-dark) 100%);
+            overflow: hidden;
+        }
+
+        .title-slide::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+            opacity: 0.04;
+            border-radius: 50%;
+        }
+
+        .title-slide::after {
+            content: '';
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-client), var(--primary), var(--secondary));
+            border-radius: 2px;
+        }
+
+        .stat-card.client {
+            border-left-color: var(--accent-client);
         }
 
         .title-slide h1 {
@@ -267,7 +301,7 @@
         @media (max-width: 600px) {
             .stats-grid { grid-template-columns: 1fr; }
             .slide { padding: clamp(16px, 4vw, 30px); }
-            .footer { padding: 0 clamp(16px, 4vw, 30px); font-size: clamp(0.6rem, 1vw, 0.75rem); }
+            .footer { padding: 0 clamp(16px, 4vw, 30px); font-size: clamp(0.75rem, 2vw, 0.85rem); bottom: 12px; }
         }
 
         /* ── Print ── */
@@ -300,7 +334,7 @@
     <h2 class="section-title">Meta Performance Overview</h2>
 
     <div class="stats-grid">
-        <div class="stat-card">
+        <div class="stat-card client">
             <div class="label">Reach</div>
             <div class="value">45,200</div>
         </div>
@@ -308,7 +342,7 @@
             <div class="label">Impressions</div>
             <div class="value">89,300</div>
         </div>
-        <div class="stat-card">
+        <div class="stat-card client">
             <div class="label">Engagements</div>
             <div class="value">3,400</div>
         </div>
@@ -324,46 +358,64 @@
             <tr>
                 <th>Ad Name</th>
                 <th>Impressions</th>
+                <th style="color: var(--text-muted);">Prev.</th>
                 <th>Clicks</th>
+                <th style="color: var(--text-muted);">Prev.</th>
                 <th>CTR</th>
                 <th>Spend</th>
+                <th style="color: var(--text-muted);">Prev.</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>Spring Menu Launch</td>
                 <td class="highlight">28,400</td>
+                <td style="color: var(--text-muted);">25,500</td>
                 <td>890</td>
+                <td style="color: var(--text-muted);">790</td>
                 <td>3.1%</td>
                 <td>$65</td>
+                <td style="color: var(--text-muted);">$58</td>
             </tr>
             <tr>
                 <td>Weekend Brunch Special</td>
                 <td>22,800</td>
+                <td style="color: var(--text-muted);">20,400</td>
                 <td>720</td>
+                <td style="color: var(--text-muted);">640</td>
                 <td>3.2%</td>
                 <td>$55</td>
+                <td style="color: var(--text-muted);">$50</td>
             </tr>
             <tr>
                 <td>New Location Announcement</td>
                 <td>19,500</td>
+                <td style="color: var(--text-muted);">17,200</td>
                 <td class="highlight">1,100</td>
+                <td style="color: var(--text-muted);">980</td>
                 <td class="highlight">5.6%</td>
                 <td>$50</td>
+                <td style="color: var(--text-muted);">$45</td>
             </tr>
             <tr>
                 <td>Coffee Loyalty Program</td>
                 <td>11,200</td>
+                <td style="color: var(--text-muted);">10,100</td>
                 <td>480</td>
+                <td style="color: var(--text-muted);">420</td>
                 <td>4.3%</td>
                 <td>$45</td>
+                <td style="color: var(--text-muted);">$41</td>
             </tr>
             <tr>
                 <td>Instagram Story - Barista Tips</td>
                 <td>7,400</td>
+                <td style="color: var(--text-muted);">6,600</td>
                 <td>210</td>
+                <td style="color: var(--text-muted);">185</td>
                 <td>2.8%</td>
                 <td>$35</td>
+                <td style="color: var(--text-muted);">$32</td>
             </tr>
         </tbody>
     </table>
@@ -511,6 +563,9 @@
     const textMuted = rootStyles.getPropertyValue('--text-muted').trim();
     const border = rootStyles.getPropertyValue('--border').trim();
     const gridLine = rootStyles.getPropertyValue('--grid-line').trim();
+    const coral = rootStyles.getPropertyValue('--coral').trim();
+    const green = rootStyles.getPropertyValue('--green').trim();
+    const purple = rootStyles.getPropertyValue('--purple').trim();
 
     // ── Chart Defaults ──
     Chart.defaults.color = textMuted;
@@ -524,7 +579,7 @@
             datasets: [{
                 label: 'Impressions',
                 data: [28400, 22800, 19500, 11200, 7400],
-                backgroundColor: [primary, primary, primary, primary, primary],
+                backgroundColor: [primary, secondary, coral, green, purple],
                 borderRadius: 6,
                 borderSkipped: false
             }]
@@ -689,7 +744,7 @@
             datasets: [{
                 label: 'Clicks',
                 data: [1850, 640, 310],
-                backgroundColor: [secondary, secondary, secondary],
+                backgroundColor: [secondary, coral, green],
                 borderRadius: 6,
                 borderSkipped: false
             }]
