@@ -30,16 +30,16 @@
 - **Notes:** Used CSS variables for all colors including Chart.js configs via getComputedStyle. Data sourced from data.json. Recommendations from curriculum spec.
 
 ## Day 3: Debug, Optimize, Ship
-- [ ] Found and fixed all 6 bugs in broken_dashboard.html
-- [ ] Made dashboard responsive with clamp()
-- [ ] Completed 5 client feedback simulations
-- [ ] Created exercises/05_debug/fixed_dashboard.html
-- [ ] Improved exercises/03_dashboard/client_report.html
-- [ ] Committed to git
-- **Started:**
-- **Completed:**
-- **Average time per client fix:**
-- **Notes:**
+- [x] Found and fixed all 6 bugs in broken_dashboard.html
+- [x] Made dashboard responsive with clamp()
+- [x] Completed 5 client feedback simulations
+- [x] Created exercises/05_debug/fixed_dashboard.html
+- [x] Improved exercises/03_dashboard/client_report.html
+- [x] Committed to git
+- **Started:** 2026-04-01
+- **Completed:** 2026-04-01
+- **Average time per client fix:** Under 2 minutes each
+- **Notes:** Debug workflow: Read → analyze → Edit one bug at a time. Client feedback: distinct chart colors, comparison columns, title gradient, client brand accent (#6F4E37), mobile footer fix.
 
 ## Day 4: Advanced + Final Test
 - [ ] Learned MCP, hooks, and permission modes concepts
@@ -64,6 +64,6 @@
 |-----|--------|---------------|
 | 1 | Complete | 2026-03-30 |
 | 2 | Complete | 2026-04-01 |
-| 3 | | |
+| 3 | Complete | 2026-04-01 |
 | 4 | | |
 | **Final Test** | | |
