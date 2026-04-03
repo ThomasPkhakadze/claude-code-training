@@ -521,6 +521,164 @@
     </div>
 </div>
 
+<!-- ════════ SLIDE 5: Website Analytics ════════ -->
+<div class="slide">
+    <p class="section-label">Website</p>
+    <h2 class="section-title">Website Analytics</h2>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="label">Sessions</div>
+            <div class="value">45,000</div>
+            <div class="change up">&#9650; +9.2% vs prev month</div>
+        </div>
+        <div class="stat-card alt">
+            <div class="label">Bounce Rate</div>
+            <div class="value">38.4%</div>
+            <div class="change down">&#9660; -5.7pp vs prev month</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Avg Duration</div>
+            <div class="value">3m 42s</div>
+        </div>
+        <div class="stat-card alt">
+            <div class="label">Pages / Session</div>
+            <div class="value">4.2</div>
+        </div>
+    </div>
+
+    <div class="chart-row">
+        <div class="chart-container">
+            <h3>Monthly Sessions (12 Months)</h3>
+            <canvas id="sessionsLineChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <h3>Traffic Sources</h3>
+            <canvas id="trafficDoughnut"></canvas>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>5 / 8</span>
+        <span class="brand"><span>MARTIVI </span><span>DIGITAL</span></span>
+    </div>
+</div>
+
+<!-- ════════ SLIDE 6: Conversion Funnel ════════ -->
+<div class="slide">
+    <p class="section-label">Conversions</p>
+    <h2 class="section-title">Conversion Funnel</h2>
+
+    <div class="funnel">
+        <div class="funnel-step" style="width: 90%; background: var(--primary);">
+            <span class="funnel-label">Website Visits</span>
+            <span class="funnel-value">45,000</span>
+        </div>
+        <div class="funnel-rate">&#8595; 7.1% convert</div>
+        <div class="funnel-step" style="width: 72%; background: var(--primary-light);">
+            <span class="funnel-label">Free Trial Signups</span>
+            <span class="funnel-value">3,200</span>
+        </div>
+        <div class="funnel-rate">&#8595; 56.3% activate</div>
+        <div class="funnel-step" style="width: 54%; background: var(--accent-warm);">
+            <span class="funnel-label">Active Trials</span>
+            <span class="funnel-value">1,800</span>
+        </div>
+        <div class="funnel-rate">&#8595; 23.3% convert to paid</div>
+        <div class="funnel-step" style="width: 36%; background: var(--success);">
+            <span class="funnel-label">Paid Conversions</span>
+            <span class="funnel-value">420</span>
+        </div>
+        <div style="margin-top: 20px; text-align: center; font-size: clamp(0.8rem, 1.2vw, 1rem); color: var(--text-muted);">
+            Overall visit-to-paid conversion: <strong style="color: var(--primary-light);">0.93%</strong>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>6 / 8</span>
+        <span class="brand"><span>MARTIVI </span><span>DIGITAL</span></span>
+    </div>
+</div>
+
+<!-- ════════ SLIDE 7: Monthly Trends ════════ -->
+<div class="slide">
+    <p class="section-label">Trends</p>
+    <h2 class="section-title">12-Month Performance Trends</h2>
+
+    <div class="chart-row">
+        <div class="chart-container full">
+            <h3>Sessions, Signups &amp; Paid Conversions</h3>
+            <canvas id="trendsChart"></canvas>
+        </div>
+    </div>
+
+    <div class="chart-row">
+        <div class="chart-container">
+            <h3>Revenue vs Ad Spend</h3>
+            <canvas id="revenueSpendChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <h3>Revenue / Ad Spend Ratio</h3>
+            <canvas id="roiChart"></canvas>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>7 / 8</span>
+        <span class="brand"><span>MARTIVI </span><span>DIGITAL</span></span>
+    </div>
+</div>
+
+<!-- ════════ SLIDE 8: Recommendations ════════ -->
+<div class="slide">
+    <p class="section-label">Action Items</p>
+    <h2 class="section-title">Recommendations</h2>
+
+    <p style="color: var(--text-muted); font-size: clamp(0.85rem, 1.2vw, 1rem); max-width: 900px; margin-bottom: 30px; line-height: 1.8;">
+        TechFlow saw exceptional growth in February 2026 -- sessions up 69.8% YoY, signups up 137%, and revenue up 154.5%.
+        The Free Trial campaigns on Meta and Brand Search on Google are the top performers. CPA dropped 25.6% YoY to $12.62,
+        showing strong efficiency gains. Focus in March should be on scaling winners and improving trial-to-paid conversion.
+    </p>
+
+    <div class="rec-grid">
+        <div class="rec-card high">
+            <div class="impact">High Impact</div>
+            <span class="channel-tag">Meta</span>
+            <h3>Double Down on Free Trial Campaign</h3>
+            <p>The Free Trial Promo has the highest CTR (4.2%) and best conversion rate on Meta. Increase budget by 30% and test new creative variations.</p>
+        </div>
+        <div class="rec-card high">
+            <div class="impact">High Impact</div>
+            <span class="channel-tag">Google</span>
+            <h3>Expand Brand Search Budget</h3>
+            <p>Brand search converts at 9.2% CTR with the lowest CPC. There is likely untapped search volume -- increase budget to capture all branded queries.</p>
+        </div>
+        <div class="rec-card medium">
+            <div class="impact">Medium Impact</div>
+            <span class="channel-tag">Google</span>
+            <h3>Optimize Competitor Comparison Campaigns</h3>
+            <p>CTR is 5.0% but conversion cost is high relative to other campaigns. Review keyword targeting and landing page relevance.</p>
+        </div>
+        <div class="rec-card medium">
+            <div class="impact">Medium Impact</div>
+            <span class="channel-tag">Website</span>
+            <h3>Reduce Bounce Rate Further</h3>
+            <p>Bounce rate improved from 44.6% to 38.2% YoY. Continue A/B testing landing pages, especially for paid traffic sources where first impressions are critical.</p>
+        </div>
+        <div class="rec-card high" style="grid-column: 1 / -1;">
+            <div class="impact">High Impact</div>
+            <span class="channel-tag">Product</span>
+            <h3>Improve Trial-to-Paid Conversion</h3>
+            <p>Only 22% of active trials convert to paid. Implement an in-app onboarding sequence and targeted email nurture for trial users in week 2.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>8 / 8</span>
+        <span class="brand"><span>MARTIVI </span><span>DIGITAL</span></span>
+    </div>
+</div>
+
 <script>
     // ── Read CSS Variables for Charts ──
     const rs = getComputedStyle(document.documentElement);
@@ -597,6 +755,181 @@
             scales: {
                 x: { grid: { color: gridLine } },
                 y: { grid: { display: false } }
+            }
+        }
+    });
+
+    // ── Slide 5: Sessions Line Chart ──
+    const months12 = ['Mar 25','Apr 25','May 25','Jun 25','Jul 25','Aug 25','Sep 25','Oct 25','Nov 25','Dec 25','Jan 26','Feb 26'];
+
+    new Chart(document.getElementById('sessionsLineChart'), {
+        type: 'line',
+        data: {
+            labels: months12,
+            datasets: [{
+                label: 'Sessions',
+                data: [28000, 29500, 31000, 30200, 27500, 29000, 33000, 36000, 38500, 35000, 41200, 45000],
+                borderColor: primary,
+                backgroundColor: primary + '1a',
+                fill: true,
+                tension: 0.3,
+                pointRadius: 4,
+                pointBackgroundColor: primary,
+                borderWidth: 2
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: {
+                x: { grid: { color: gridLine } },
+                y: { grid: { color: gridLine }, ticks: { callback: v => (v/1000) + 'K' } }
+            }
+        }
+    });
+
+    // ── Slide 5: Traffic Sources Doughnut ──
+    new Chart(document.getElementById('trafficDoughnut'), {
+        type: 'doughnut',
+        data: {
+            labels: ['Organic (34%)', 'Paid (28%)', 'Direct (18%)', 'Referral (12%)', 'Social (8%)'],
+            datasets: [{
+                data: [34, 28, 18, 12, 8],
+                backgroundColor: [primary, primaryLight, warm, success, '#845ef7'],
+                borderWidth: 0
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: { usePointStyle: true, pointStyle: 'circle', padding: 15, font: { size: 11 } }
+                }
+            }
+        }
+    });
+
+    // ── Slide 7: Trends (Sessions, Signups, Paid) ──
+    new Chart(document.getElementById('trendsChart'), {
+        type: 'line',
+        data: {
+            labels: months12,
+            datasets: [
+                {
+                    label: 'Sessions',
+                    data: [28000, 29500, 31000, 30200, 27500, 29000, 33000, 36000, 38500, 35000, 41200, 45000],
+                    borderColor: primary,
+                    fill: false,
+                    tension: 0.3,
+                    pointRadius: 4,
+                    pointBackgroundColor: primary,
+                    yAxisID: 'y'
+                },
+                {
+                    label: 'Signups',
+                    data: [1400, 1550, 1700, 1650, 1500, 1600, 1900, 2200, 2500, 2300, 2900, 3200],
+                    borderColor: primaryLight,
+                    fill: false,
+                    tension: 0.3,
+                    pointRadius: 4,
+                    pointBackgroundColor: primaryLight,
+                    yAxisID: 'y1'
+                },
+                {
+                    label: 'Paid',
+                    data: [180, 195, 215, 205, 190, 200, 250, 290, 320, 300, 380, 420],
+                    borderColor: warm,
+                    fill: false,
+                    tension: 0.3,
+                    pointRadius: 4,
+                    pointBackgroundColor: warm,
+                    yAxisID: 'y1'
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: { mode: 'index', intersect: false },
+            plugins: {
+                legend: { labels: { usePointStyle: true, pointStyle: 'circle', padding: 20 } }
+            },
+            scales: {
+                x: { grid: { color: gridLine } },
+                y: { type: 'linear', position: 'left', grid: { color: gridLine }, ticks: { callback: v => (v/1000) + 'K' }, title: { display: true, text: 'Sessions', color: textMuted } },
+                y1: { type: 'linear', position: 'right', grid: { drawOnChartArea: false }, title: { display: true, text: 'Signups / Paid', color: textMuted } }
+            }
+        }
+    });
+
+    // ── Slide 7: Revenue vs Spend Bar Chart ──
+    new Chart(document.getElementById('revenueSpendChart'), {
+        type: 'bar',
+        data: {
+            labels: months12,
+            datasets: [
+                {
+                    label: 'Revenue',
+                    data: [16200, 17550, 19350, 18450, 17100, 18000, 22500, 26100, 28800, 27000, 34200, 37800],
+                    backgroundColor: primary,
+                    borderRadius: 4,
+                    borderSkipped: false
+                },
+                {
+                    label: 'Ad Spend',
+                    data: [3100, 3200, 3400, 3300, 2900, 3000, 3600, 4000, 4200, 3800, 4800, 5300],
+                    backgroundColor: warm,
+                    borderRadius: 4,
+                    borderSkipped: false
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { labels: { usePointStyle: true, pointStyle: 'circle', padding: 20 } }
+            },
+            scales: {
+                x: { grid: { color: gridLine } },
+                y: { grid: { color: gridLine }, ticks: { callback: v => '$' + (v/1000) + 'K' } }
+            }
+        }
+    });
+
+    // ── Slide 7: Revenue/Spend Ratio Line ──
+    const revenue = [16200, 17550, 19350, 18450, 17100, 18000, 22500, 26100, 28800, 27000, 34200, 37800];
+    const spend = [3100, 3200, 3400, 3300, 2900, 3000, 3600, 4000, 4200, 3800, 4800, 5300];
+    const ratio = revenue.map((r, i) => +(r / spend[i]).toFixed(2));
+
+    new Chart(document.getElementById('roiChart'), {
+        type: 'line',
+        data: {
+            labels: months12,
+            datasets: [{
+                label: 'Revenue / Spend',
+                data: ratio,
+                borderColor: success,
+                backgroundColor: success + '1a',
+                fill: true,
+                tension: 0.3,
+                pointRadius: 5,
+                pointBackgroundColor: success,
+                borderWidth: 2
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { labels: { usePointStyle: true, pointStyle: 'circle', padding: 20 } }
+            },
+            scales: {
+                x: { grid: { color: gridLine } },
+                y: { grid: { color: gridLine }, ticks: { callback: v => v + 'x' } }
             }
         }
     });
